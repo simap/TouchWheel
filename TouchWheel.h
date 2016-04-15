@@ -11,11 +11,13 @@ public:
 	void calibrate();
 	void setFastAdc();
 	int scan();
+	boolean isTouching();
 private:
 	int pin1, pin2, pin3;
 	int cal1, cal2, cal3;
 	int threshold = 25;
-  	int lowThreshold = 5;
+  	int lowThreshold = 12;
+  	int delta = 5;
   	int mode = 0;
 };
 

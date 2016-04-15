@@ -38,10 +38,10 @@ int TouchWheel::scan() {
       break;
     case 1:
 
-      if (value2 - value1 > lowThreshold) {
+      if (value2 - value1 > delta) {
         res = 1;
         mode = 2;
-      } else if (value3 - value1 > lowThreshold) {
+      } else if (value3 - value1 > delta) {
         mode = 3;
         res = -1;
       } else if (value1 < lowThreshold) {
@@ -50,10 +50,10 @@ int TouchWheel::scan() {
       break;
     case 2:
 
-      if (value3 - value2 > lowThreshold) {
+      if (value3 - value2 > delta) {
         res = 1;
         mode = 3;
-      } else if (value1 - value2 > lowThreshold) {
+      } else if (value1 - value2 > delta) {
         mode = 1;
         res = -1;
       } else if (value2 < lowThreshold) {
@@ -61,10 +61,10 @@ int TouchWheel::scan() {
       }
       break;
     case 3:
-      if (value1 - value3 > lowThreshold) {
+      if (value1 - value3 > delta) {
         res = 1;
         mode = 1;
-      } else if (value2 - value3 > lowThreshold) {
+      } else if (value2 - value3 > delta) {
         mode = 2;
         res = -1;
       } else if (value3 < lowThreshold) {
@@ -73,4 +73,8 @@ int TouchWheel::scan() {
       break;
 	}
 	return res;
+}
+
+boolean TouchWheel::isTouching() {
+	return mode != 0;
 }
