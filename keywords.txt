@@ -1,0 +1,5 @@
+TouchSlider	KEYWORD1
+calibrate	KEYWORD2
+setFastAdc	KEYWORD2
+scan	KEYWORD2
+isTouching	KEYWORD2
