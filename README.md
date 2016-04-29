@@ -9,8 +9,8 @@ Capacitive touch wheels using only 3 analog pins!
 
 The TouchWheel library scans 3 touch pads, when put in a circle this allows for a touch wheel that can detect clockwise and counterclockwise finger movement. The 3 pads can be repeated any number of times for higher resolution touch wheels. 9 and 12 pad wheels with a 1.7" diameter work very well.
 
-Uses the ADCTouch library https://github.com/martin2250/ADCTouch
-Based on the really cool techique described [http://tuomasnylund.fi/drupal6/content/capacitive-touch-sensing-avr-and-single-adc-pin](here)
+Uses the [ADCTouch](https://github.com/martin2250/ADCTouch) library 
+Based on the really cool techique described [here](http://tuomasnylund.fi/drupal6/content/capacitive-touch-sensing-avr-and-single-adc-pin)
 
 
 
