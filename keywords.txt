@@ -1,4 +1,7 @@
+AdcTouchChannel	KEYWORD1
 TouchSlider	KEYWORD1
+TouchWheel	KEYWORD1
+read	KEYWORD2
 calibrate	KEYWORD2
 setFastAdc	KEYWORD2
 scan	KEYWORD2
